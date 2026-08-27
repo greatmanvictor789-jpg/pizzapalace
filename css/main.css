@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100%;
+    color: aliceblue;
+}
+
+
+.main img {
+    float: right;
+    margin-right: 100px;
+
+}
+
+
+.main {
+    word-spacing: 5px;
+    color: #e2a13c;
+    margin-left: 70px;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #18120e;
+    overflow: auto;
+}
+
+.main-nav {
+    display: flex;
+}
+
+.main-nav-bt {
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    background: #A23B26;
+    color: #f4e8ce;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal
+}
+
+.nav-btt {
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    background: #18120e;
+    color: #f4e8ce;
+    border: none;
+    box-shadow: 0 0 1px #f4e8ce;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal
+}
+
+.start-btt {
+    display: flex;
+    align-items: center;
+}
+
+.start-bt {
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    background: #A23B26;
+    color: #f4e8ce;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal
+}
+
+span {
+    color: #f4e8ce;
+    font-size: 50px;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+h2 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+body {
+    background-color: #18120e;
+}
+
+body:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(../instagram.jpg) url(../whatsapp.jpg) url(../tiktok.jpg)
+}
+
+a {
+    cursor: pointer;
+}
+
+.header-main {
+    background-color: #18120e;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: fit-content;
+    height: 100%;
+    padding-left: 40px;
+    display: flex;
+    color: #f4e8ce;
+    align-items: center;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+span-1 {
+    color: #e2a13c;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+span-2 {
+    color: #f4e8ce;
+    line-height: 30px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
+span-3 {
+    color: #f4e8ce;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    display: inline-flex;
+    vertical-align: middle;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: 50px;
+    border: none;
+    border-left: 1px solid #382c23;
+    height: 30px;
+    display: inline-block;
+    margin: 0 5px;
+    padding-left: 10px;
+}
+
+
+.logo img {
+    margin-right: 25px;
+    width: auto;
+    height: 56px;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.header-main-nav {
+    width: 100%;
+    padding: 1rem 5%;
+    border-bottom: 1px solid #e2a13c;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.header-main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-right: 0;
+}
+
+.header-main-nav ul li {
+    display: inline;
+    float: left;
+}
+
+.header-main-nav ul li a {
+    padding: 0 10px;
+    line-height: 50px;
+    display: block;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    color: #f4e8ce;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 0.08rem;
+}
+
+.header-main-nav ul li a:hover {
+    color: #e2a13c;
+    text-decoration: underline;
+    text-underline-offset: 9px;
+}
+
+.header-main-nav ul li a.selected {
+    color: #e2a13c;
+}
+
+.mid {
+    background-color: #f4e8ce;
+    color: #A23B26;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: small;
+    min-height: auto;
+    margin-top: 10px;
+    margin-bottom: 78px;
+    clip-path: polygon(
+        0 12px, 2% 0, 4% 12px, 6% 0, 8% 12px, 10% 0, 12% 12px,
+        14% 0, 16% 12px, 18% 0, 20% 12px, 22% 0, 24% 12px,
+        26% 0, 28% 12px, 30% 0, 32% 12px, 34% 0, 36% 12px,
+        38% 0, 40% 12px, 42% 0, 44% 12px, 46% 0, 48% 12px,
+        50% 0, 52% 12px, 54% 0, 56% 12px, 58% 0, 60% 12px,
+        62% 0, 64% 12px, 66% 0, 68% 12px, 70% 0, 72% 12px,
+        74% 0, 76% 12px, 78% 0, 80% 12px, 82% 0, 84% 12px,
+        86% 0, 88% 12px, 90% 0, 92% 12px, 94% 0, 96% 12px,
+        98% 0, 100% 12px,
+        100% calc(100% - 12px), 98% 100%, 96% calc(100% - 12px),
+        94% 100%, 92% calc(100% - 12px), 90% 100%, 88% calc(100% - 12px),
+        86% 100%, 84% calc(100% - 12px), 82% 100%, 80% calc(100% - 12px),
+        78% 100%, 76% calc(100% - 12px), 74% 100%, 72% calc(100% - 12px),
+        70% 100%, 68% calc(100% - 12px), 66% 100%, 64% calc(100% - 12px),
+        62% 100%, 60% calc(100% - 12px), 58% 100%, 56% calc(100% - 12px),
+        54% 100%, 52% calc(100% - 12px), 50% 100%, 48% calc(100% - 12px),
+        46% 100%, 44% calc(100% - 12px), 42% 100%, 40% calc(100% - 12px),
+        38% 100%, 36% calc(100% - 12px), 34% 100%, 32% calc(100% - 12px),
+        30% 100%, 28% calc(100% - 12px), 26% 100%, 24% calc(100% - 12px),
+        22% 100%, 20% calc(100% - 12px), 18% 100%, 16% calc(100% - 12px),
+        14% 100%, 12% calc(100% - 12px), 10% 100%, 8% calc(100% - 12px),
+        6% 100%, 4% calc(100% - 12px), 2% 100%, 0 calc(100% - 12px)
+    );
+    }
+
+.mid-text {
+    margin-left: 95px;
+}
+
+.half {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+table {
+    margin-left: 95px;
+    margin-right: 0;
+    border-collapse: collapse;
+}
+
+caption {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+span-4 {
+    color: #18120e;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+span-7 {
+    color: #18120e;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+
+th,
+td {
+    border-color: #18120e;
+    border-width: 1px;
+    border-style: solid;
+    padding: 25px;
+    line-height: 30px;
+}
+
+span-5 {
+    color: #241b15;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+span-6 {
+    color: #f4e8ce;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: small;
+}
+
+.idnm {
+    background-color: #241b15;
+}
+
+.lower-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 48px;
+}
+
+.lower-content > table {
+    margin-left: 80px;
+    width: calc(100% - 80px);
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.lower-content table td {
+    padding: 30px;
+    line-height: 1.4;
+}
+
+.lower-content table td > br {
+    display: none;
+}
+
+.lower-content table,
+.lower-content table td {
+    border-radius: 10px;
+}
+
+.side-text {
+    margin-right: 5px;
+    color: #e2a13c;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+}
+
+.footer {
+    position: relative;
+    min-height: 100px;
+    height: auto;
+    margin-top: 0px;
+    clear: both;
+    background-color: #241b15;
+}
+
+.foot-table {
+    color: #e2a13c;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.last {
+    color: #e2a13c;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+}
+
+.last nav {
+    display: flex;
+    justify-content: center;
+}
+
+.last-bt {
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    background: #A23B26;
+    color: #f4e8ce;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal
+}
+
+.last-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 0 50px;
+    padding-bottom: 2rem;
+    margin-right: 20px;
+}
+
+span-8 {
+    color: #f4e8ce;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bottom {
+    color: #f4e8ce;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: small;
+}
+
+.bottom > div:last-child {
+    line-height: 1.8;
+}
+
+.bottom:nth-child(2) {
+    justify-self: center;
+}
+
+.bottom:nth-child(3) {
+    justify-self: end;
+    text-align: right;
+}
+
+@media (max-width: 700px) {
+    .last-text {
+        grid-template-columns: 1fr;
+        margin: 0 25px;
+    }
+
+    .bottom:nth-child(2),
+    .bottom:nth-child(3) {
+        justify-self: start;
+        text-align: left;
+    }
+}
+
+span-9 {
+    color: #e2a13c;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+}
+
+hr.short-centered {
+    width: calc(100% - 100px);
+    height: 1px;
+    border: 0;
+    background-color: #382c23;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copyright {
+    margin-left: 50px;
+}
+
+.remark {
+    margin-left: 900px;
+}
+
