@@ -6,6 +6,8 @@
 
 body {
     background-color: #18120e;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .container {
@@ -114,11 +116,14 @@ span-1 {
 
 .footer {
     position: relative;
+    width: 100vw;
     min-height: 100px;
     height: auto;
     margin-top: 0px;
+    margin-left: calc(50% - 50vw);
     clear: both;
     background-color: #241b15;
+    box-sizing: border-box;
 }
 .start-bt {
     padding: 0.5rem 1.5rem;
