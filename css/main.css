@@ -103,15 +103,6 @@ body {
     background-color: #18120e;
 }
 
-body:after {
-    position: absolute;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    z-index: -1;
-    content: url(../instagram.jpg) url(../whatsapp.jpg) url(../tiktok.jpg)
-}
-
 a {
     cursor: pointer;
 }
@@ -397,6 +388,13 @@ span-6 {
 
 html, body {
     height: 100%;
+}
+
+.line {
+    border: none;
+    height: 1px;
+    background-color: #382c23;
+    width: 100%;
 }
 
 .footer {

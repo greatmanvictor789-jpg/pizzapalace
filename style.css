@@ -12,10 +12,118 @@ body {
 
 .container {
     min-height: 100%;
+    flex: 1;
 }
 
 .main {
-    overflow: auto;
+    background-color: #18120e;
+    color: #e2a13c;
+    word-spacing: 5px;
+    margin-left: 70px;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.about-section {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 80px;
+    box-sizing: border-box;
+}
+
+.about-text-wrapper {
+    flex: 1;
+    max-width: 620px;
+}
+
+.main > table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 350px;
+    margin-left: auto;
+    margin-right: 0;
+    border: 1px solid #241b15;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(24, 18, 14, 0.12);
+    flex-shrink: 0;
+}
+
+.main table td {
+    padding: 20px;
+    line-height: 1.5;
+    color: #e2a13c;
+    border: 1px solid #241b15;
+    text-align: left;
+    vertical-align: top;
+}
+
+.main table td > br {
+    display: none;
+}
+
+.main table,
+.main table td {
+    border-radius: 10px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-class {
+    display: flex;
+    align-items: flex-start;
+    gap: 5.4rem;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    color: #f4e8ce;
+    font-size: 25px;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    display: block;
+}
+
+span-2 {
+    color: #f4e8ce;
+    line-height: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    word-spacing: 2px;
+    display: block;
+}
+
+span-3 {
+    color: #f4e8ce;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.line {
+    border: none;
+    height: 1px;
+    background-color: #382c23;
+    width: 100%;
 }
 
 .header-main {
@@ -112,6 +220,132 @@ span-1 {
 .start-btt {
     display: flex;
     align-items: center;
+}
+
+.mid {
+    background-color: #f4e8ce;
+    color: #A23B26;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: small;
+    min-height: auto;
+    margin-top: 10px;
+    margin-bottom: 78px;
+    }
+
+.mid-text {
+    margin-left: 95px;
+}
+
+.half {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+table {
+    margin-left: 95px;
+    margin-right: 0;
+    border-collapse: collapse;
+}
+
+caption {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+span-4 {
+    color: #18120e;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+span-7 {
+    color: #18120e;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+
+th,
+td {
+    border-color: #18120e;
+    border-width: 1px;
+    border-style: solid;
+    padding: 25px;
+    line-height: 30px;
+}
+
+span-5 {
+    color: #241b15;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.side-text {
+    margin-left: 90px;
+    color: #e2a13c;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+    max-width: 860px;
+    line-height: 1.6;
+}
+
+.side-copy {
+    margin-right: 360px;
+}
+
+.idnm {
+    background-color: #241b15;
+}
+
+.side-text > table {
+    float: right;
+    width: 500px;
+    height: 420px;
+    margin: 0 0 0 32px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border: 1px solid #241b15;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(24, 18, 14, 0.12);
+}
+
+.side-text table td {
+    height: 420px;
+    padding: 18px 16px;
+    line-height: 1.5;
+    color: #18120e;
+    border: 1px solid #241b15;
+    text-align: left;
+    vertical-align: top;
+}
+
+.side-text table td > br {
+    display: none;
+}
+
+.side-text table,
+.side-text table td {
+    border-radius: 10px;
 }
 
 .footer {

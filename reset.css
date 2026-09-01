@@ -500,6 +500,13 @@ html, body {
     min-height: 100%;
 }
 
+.line {
+    border: none;
+    height: 1px;
+    background-color: #382c23;
+    width: 100%;
+}
+
 .footer {
     background-color: #241b15;
     position: relative;
