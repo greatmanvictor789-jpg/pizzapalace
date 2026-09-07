@@ -22,11 +22,11 @@ body {
     background-color: #18120e;
     color: #e2a13c;
     word-spacing: 5px;
-    margin-left: 70px;
     font-family: "JetBrains Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    margin-left: 70px;
     overflow: auto;
 }
 
@@ -289,6 +289,10 @@ span-5 {
     order: 1;
 }
 
+.side-content {
+    max-width: 760px;
+}
+
 .below {
     color: #18120e;
     font-family: "Fraunces", serif;
@@ -470,6 +474,13 @@ span-9 {
     font-weight: 400;
     font-style: normal;
     font-size: medium;
+}
+
+.line {
+    border: none;
+    height: 1px;
+    background-color: #382c23;
+    width: 100%;
 }
 
 hr {
