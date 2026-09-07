@@ -10,6 +10,12 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    color: #f4e8ce;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .container {
     min-height: 100%;
     flex: 1;

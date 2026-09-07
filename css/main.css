@@ -106,7 +106,9 @@ body {
 }
 
 a {
+    color: #f4e8ce;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .header-main {

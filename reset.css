@@ -30,6 +30,12 @@ body {
     overflow: auto;
 }
 
+a {
+    color: #f4e8ce;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .header-main {
     background-color: #18120e;
     width: 100%;
