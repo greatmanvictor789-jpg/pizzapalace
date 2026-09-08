@@ -433,7 +433,7 @@ span-8 {
     text-align: right;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
     .last-text {
         grid-template-columns: 1fr;
         margin: 0 25px;
@@ -479,7 +479,7 @@ img {
     max-width: 100%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
     .header-main {
         height: auto;
     }
