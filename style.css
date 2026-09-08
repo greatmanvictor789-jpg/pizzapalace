@@ -559,6 +559,26 @@ img {
         overflow-wrap: anywhere;
     }
 
+    .half table {
+        width: 100%;
+        margin: 0;
+        table-layout: fixed;
+    }
+
+    .half table tr {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .half table td {
+        display: block;
+        width: 100%;
+        padding: 18px;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+
     .about-class {
         gap: 20px;
         align-items: flex-start;
