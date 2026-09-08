@@ -667,6 +667,23 @@ img {
     }
 }
 
+@media (min-width: 701px) and (max-width: 1100px) {
+    .header-main-nav {
+        flex-wrap: nowrap;
+    }
+
+    .logo {
+        flex: 0 1 auto;
+    }
+
+    .header-main-nav ul {
+        order: 0;
+        width: auto;
+        gap: 12px;
+        flex-shrink: 1;
+    }
+}
+
 
 
 
