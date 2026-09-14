@@ -1,6 +1,8 @@
 // Nav link highlighting
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.header-main-nav ul li a');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const headerNav = document.querySelector('.header-main-nav');
 
     // Highlight the current page on load
     highlightCurrentPage(navLinks);
@@ -13,7 +15,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Add selected class to clicked link
             this.classList.add('selected');
+            headerNav.classList.remove('menu-open');
+            menuToggle.setAttribute('aria-expanded', 'false');
         });
+    });
+
+    menuToggle.addEventListener('click', function () {
+        const isOpen = headerNav.classList.toggle('menu-open');
+        menuToggle.setAttribute('aria-expanded', String(isOpen));
+        menuToggle.querySelector('.sr-only').textContent = isOpen ? 'Close menu' : 'Open menu';
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            headerNav.classList.remove('menu-open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.querySelector('.sr-only').textContent = 'Open menu';
+        }
     });
 });
 
