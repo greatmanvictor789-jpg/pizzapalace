@@ -47,12 +47,13 @@ a {
     max-width: 620px;
 }
 
-.main > table {
+.about-section > table {
     border-collapse: collapse;
     table-layout: fixed;
     width: 350px;
     margin-left: auto;
     margin-right: 0;
+    background-color: #241b15;
     border: 1px solid #241b15;
     border-radius: 20px;
     overflow: hidden;
@@ -64,6 +65,7 @@ a {
     padding: 20px;
     line-height: 1.5;
     color: #e2a13c;
+    background-color: #241b15;
     border: 1px solid #241b15;
     text-align: left;
     vertical-align: top;
@@ -434,7 +436,7 @@ span-8 {
     text-align: right;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
     .last-text {
         grid-template-columns: 1fr;
         margin: 0 25px;
@@ -496,7 +498,7 @@ img {
     border: 0;
 }
 
-@media only screen and (max-width: 393px) {
+@media only screen and (max-width: 390px) {
     .header-main {
         height: auto;
     }
@@ -742,14 +744,19 @@ img {
         max-width: none;
     }
 
-    .main > table {
+    .about-section > table {
         width: 100%;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .main table td {
         padding: 20px;
         overflow-wrap: anywhere;
+    }
+
+    .half {
+        padding: 48px 16px;
+        overflow: hidden;
     }
 
     .half table {
